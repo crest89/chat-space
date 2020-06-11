@@ -21,8 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-###groups_usersテーブル
+* ###groups_usersテーブル
 
 |Column|type|Option|
 |------|----|------|
