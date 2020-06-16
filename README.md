@@ -41,8 +41,8 @@ Things you may want to cover:
 |------|----|------|
 |body|text|
 |image|string|
-|group_id|integer|
-|user_id|integer|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belong_to group
@@ -51,7 +51,7 @@ Things you may want to cover:
 ### groupテーブル
 |Column|type|Option|
 |------|----|------|
-|group_name|integer|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ### Association
 - has_many group_users
