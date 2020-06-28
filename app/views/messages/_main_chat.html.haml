@@ -1,0 +1,27 @@
+.main-chat
+  .info
+    .info__group
+      .info__group-name
+        test
+      .info__group-member
+        Member : takumi
+    = link_to "#", class: "edit-btn" do
+      .edit-btn__text
+        edit
+  .messages
+    .message
+      .message__up
+        %p.message__up-name
+          takumi
+        %p.message__up-time
+          2020/06/25(thu) 15:36 
+      %p.message__text
+        おはよう
+  .form
+    %form.message_submit
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file",  class: "input-box__image__file"}
+      %input{type: "submit", value: "Send", class: "submit-btn"}
