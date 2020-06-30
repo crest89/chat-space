@@ -4,14 +4,14 @@
       .user-box_name
         = current_user.name
       .user-box_option
-        = link_to "#", class: "user-box_option-edit" do
+        = link_to new_group_path, class: "user-box_option-edit" do
           %i.far.fa-edit
         = link_to edit_user_path(current_user), class: "user-box_option-cog" do
           %i.fas.fa-cog
   .list
-    .list__groups
-      %p.list__groups-name
-        techcamp
-      %p.list__groups-message
-        メッセージがありません
-    
+    - current_user.groups.each do |group|
+      = link_to '#', class: "group" do
+        %p.group-name
+          = group.name
+        %p.group-message
+          メッセージはまだありません
