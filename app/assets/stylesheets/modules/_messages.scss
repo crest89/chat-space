@@ -60,9 +60,11 @@ $right_gray: #d2d2d2;
       height: calc(100vh - 100px);
       background-color: $dark_gray;
       padding: 20px 20px 0px;
-        &__groups{
+        .group {
           color:$right_white;
           margin-bottom: 40px;
+          text-decoration: none;
+          display: block;
           &-name {
             font-size: 15px;
             margin-bottom: 5px;
