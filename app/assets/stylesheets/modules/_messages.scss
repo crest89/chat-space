@@ -79,6 +79,7 @@ $right_gray: #d2d2d2;
   .main-chat {
     width: calc(100vw - 300px);
     height: 100vh;
+    z-index: 1;
     background-color: $right_white;
     .info{
       height: 100px;
@@ -119,6 +120,7 @@ $right_gray: #d2d2d2;
       height: calc(100vh - 190px);
       background-color: $white;
       padding: 35px 0 0 40px;
+      overflow: scroll;
       .message{
         margin-bottom: 46px;
         &__up {
@@ -146,6 +148,7 @@ $right_gray: #d2d2d2;
       background-color: $right_gray;
       bottom: 0;
       padding: 20px 40px;
+      z-index: 1;
       .new_message{
         display: flex;
         .input-box{
