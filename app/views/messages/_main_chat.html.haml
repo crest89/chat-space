@@ -8,7 +8,7 @@
         %ul
           - @group.users.each do |user|
             %li= user.name
-    = link_to edit_group_path(current_user), class: "edit-btn" do
+    = link_to edit_group_path(@group), class: "edit-btn" do
       .edit-btn__text
         edit
   .messages

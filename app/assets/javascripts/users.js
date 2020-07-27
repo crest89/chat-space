@@ -19,10 +19,10 @@ $(function() {
   }
   function addDeleteUser(name, id) {
     let html = `
-    <div class="chat-group-user clearfix" id="${id}">
-      <p class="chat-group-user__name">${name}</p>
-      <div class="user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn" data-user-id="${id}" data-user-name="${name}">削除</div>
-    </div>`;
+      <div class="chat-group-user clearfix" id="${id}">
+        <p class="chat-group-user__name">${name}</p>
+        <div class="user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn" data-user-id="${id}" data-user-name="${name}">削除</div>
+      </div>`;
     $(".js-add-user").append(html);
   }
   function addMember(userId) {
@@ -62,7 +62,7 @@ $(function() {
     addDeleteUser(userName, userId);
     addMember(userId);
   });
-  $(document).on("click", "chat-group-user__btn--remove", function() {
+  $(document).on("click", ".chat-group-user__btn--remove", function() {
     $(this)
       .parent()
       .remove();

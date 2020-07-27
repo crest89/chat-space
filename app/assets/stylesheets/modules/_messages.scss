@@ -99,6 +99,9 @@ $right_gray: #d2d2d2;
           display: flex;
           font-size: 12px;
           color: $gray;
+          ul {
+            display: flex;
+          }
         }
       }
       .edit-btn{
